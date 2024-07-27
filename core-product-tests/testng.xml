@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Test Suite" verbose="1" parallel="tests" thread-count="2" configfailurepolicy="continue">
+<suite name="Test Suite" verbose="1" parallel="tests" thread-count="3" configfailurepolicy="continue">
     <test name="Navigate and Verify Mens Jackets using chrome" annotations="JDK" preserve-order="true">
        <parameter name="BROWSER" value="chrome">chrome</parameter>
         <parameter name="cucumber.filter.tags" value="@test">test</parameter>

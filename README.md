@@ -52,7 +52,7 @@ automation-assessment> <B>mvn clean test -pl</B> <module_name><br>
 **Currently framework supports parallel execution.</br>**
 <br>To run the test cases in different browsers parallel for a particular module, do changes in testng as below screenshot.
 
-![Screenshot 2024-07-27 at 7.04.14 PM.png](..%2F..%2F..%2F..%2F..%2F..%2Fvar%2Ffolders%2F9w%2Fv8ryg9l53qg_m35yssmpj3t00000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_ngeIcX%2FScreenshot%202024-07-27%20at%207.04.14%20PM.png)
+![img_1.png](img_1.png)
 
 ## Adding new MODULE to the framework:
 
@@ -93,7 +93,7 @@ Reporting:
 ---------------
 *  Currently, framework supports very basic ExtentSparkReporter report. This will be improved in future for making rich GUI and Client/end-user satisfactory
 
-![Screenshot 2024-07-27 at 7.13.20 PM.png](..%2F..%2F..%2F..%2F..%2F..%2Fvar%2Ffolders%2F9w%2Fv8ryg9l53qg_m35yssmpj3t00000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_F9XGRg%2FScreenshot%202024-07-27%20at%207.13.20%20PM.png)
+![img_2.png](img_2.png)
 
 ## FUTURE ENHANCEMENTS
 * Improving the report quality
