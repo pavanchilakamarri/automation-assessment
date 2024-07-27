@@ -1,0 +1,6 @@
+com/veevasys/pages/MensPage.class
+com/veevasys/pages/HomePage.class
+com/veevasys/stefDefinition/CoreProduct.class
+com/veevasys/pages/NewsFeatured.class
+com/veevasys/runnerClass.class
+com/veevasys/CucumberHooks.class

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Execution setup success...]]>
+    </line>
+    <line>
+      <![CDATA[Execution setup success...]]>
+    </line>
+    <line>
+      <![CDATA[Execution setup success...]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2024-07-27T19:56:21 IST" name="Test Suite" finished-at="2024-07-27T19:56:36 IST" duration-ms="15546">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.veevasys.runnerClass@79b06cab]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.veevasys.runnerClass@10e41621]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.veevasys.runnerClass@2667f029]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-07-27T19:56:21 IST" name="Navigate and Verify Mens Jackets using edge" finished-at="2024-07-27T19:56:29 IST" duration-ms="8364">
+      <class name="com.veevasys.runnerClass">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.veevasys.runnerClass@10e41621]" started-at="2024-07-27T19:56:21 IST" name="setUpClass" finished-at="2024-07-27T19:56:21 IST" duration-ms="409" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@10ad20cb]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.veevasys.runnerClass@10e41621]" started-at="2024-07-27T19:56:21 IST" name="setUp" finished-at="2024-07-27T19:56:21 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[CP]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.veevasys.runnerClass@10e41621]" started-at="2024-07-27T19:56:21 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-07-27T19:56:29 IST" duration-ms="7889" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Retrieving the count of videos present in new & featured and counting the videos which are >=3"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["checking"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Execution setup success...]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.veevasys.runnerClass@10e41621]" started-at="2024-07-27T19:56:29 IST" name="tearDown" finished-at="2024-07-27T19:56:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.veevasys.runnerClass@10e41621]" started-at="2024-07-27T19:56:29 IST" name="tearDownClass" finished-at="2024-07-27T19:56:29 IST" duration-ms="31" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.veevasys.runnerClass -->
+    </test> <!-- Navigate and Verify Mens Jackets using edge -->
+    <test started-at="2024-07-27T19:56:21 IST" name="Navigate and Verify Mens Jackets using chrome" finished-at="2024-07-27T19:56:30 IST" duration-ms="9512">
+      <class name="com.veevasys.runnerClass">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.veevasys.runnerClass@79b06cab]" started-at="2024-07-27T19:56:21 IST" name="setUpClass" finished-at="2024-07-27T19:56:21 IST" duration-ms="409" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@26d10f2e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.veevasys.runnerClass@79b06cab]" started-at="2024-07-27T19:56:21 IST" name="setUp" finished-at="2024-07-27T19:56:21 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[CP]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.veevasys.runnerClass@79b06cab]" started-at="2024-07-27T19:56:21 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-07-27T19:56:30 IST" duration-ms="9055" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Retrieving the count of videos present in new & featured and counting the videos which are >=3"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["checking"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Execution setup success...]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.veevasys.runnerClass@79b06cab]" started-at="2024-07-27T19:56:30 IST" name="tearDown" finished-at="2024-07-27T19:56:30 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.veevasys.runnerClass@79b06cab]" started-at="2024-07-27T19:56:30 IST" name="tearDownClass" finished-at="2024-07-27T19:56:30 IST" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.veevasys.runnerClass -->
+    </test> <!-- Navigate and Verify Mens Jackets using chrome -->
+    <test started-at="2024-07-27T19:56:29 IST" name="Navigate and Verify Mens Jackets using safari" finished-at="2024-07-27T19:56:36 IST" duration-ms="7169">
+      <class name="com.veevasys.runnerClass">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.veevasys.runnerClass@2667f029]" started-at="2024-07-27T19:56:20 IST" name="beforeSuite" finished-at="2024-07-27T19:56:21 IST" duration-ms="436" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.veevasys.runnerClass@2667f029]" started-at="2024-07-27T19:56:29 IST" name="setUpClass" finished-at="2024-07-27T19:56:29 IST" duration-ms="12" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7dd712e8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.veevasys.runnerClass@2667f029]" started-at="2024-07-27T19:56:29 IST" name="setUp" finished-at="2024-07-27T19:56:29 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[safari]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[CP]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.veevasys.runnerClass@2667f029]" started-at="2024-07-27T19:56:29 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-07-27T19:56:36 IST" duration-ms="7135" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Retrieving the count of videos present in new & featured and counting the videos which are >=3"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["checking"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Execution setup success...]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.veevasys.runnerClass@2667f029]" started-at="2024-07-27T19:56:36 IST" name="tearDown" finished-at="2024-07-27T19:56:36 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.veevasys.runnerClass@2667f029]" started-at="2024-07-27T19:56:36 IST" name="tearDownClass" finished-at="2024-07-27T19:56:36 IST" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.veevasys.runnerClass@2667f029]" started-at="2024-07-27T19:56:36 IST" name="afterSuite" finished-at="2024-07-27T19:56:37 IST" duration-ms="249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.veevasys.runnerClass -->
+    </test> <!-- Navigate and Verify Mens Jackets using safari -->
+  </suite> <!-- Test Suite -->
+</testng-results>

@@ -1,0 +1,15 @@
+testConfig:
+  projectName: Automation Framework
+  execution: local   #(remote,local)  #defalut local
+  retryCount: 1  #default 0
+  threadCount: 1 #If value is more than 1 then it is parallel execution - default 1  #parallel for appium is not supported yet.
+  webTest:  true #default true , to disable driver launch
+webDriverConfig:
+  driver: chrome  #iexplorer,firefox,safari,appium  default chrome
+  screenshots: false #defalut true
+  implicitTimeout: 30 #default 30 seconds
+  waitForTimeout: 30 #default 30 seconds
+  pageLoadTimeout: 30 #default 30 seconds
+  scriptTimeout: 30 #default 30 seconds
+  chromeSwitches: "--start-maximized,--disable-popup-blocking,--incognito,--disable-infobars,--ignore-certificate-errors" #no default value
+  firefoxPreferences: "-Dfirefox.preferences=browser.download.folderList=2;browser.download.manager.showWhenStarting=false;browser.download.dir=c:\\downloads" #no default value
