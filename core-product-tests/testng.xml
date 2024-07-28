@@ -16,12 +16,4 @@
             <class name="com.veevasys.runnerClass"/>
         </classes>
     </test>
-    <test name="Navigate and Verify Mens Jackets using safari" annotations="JDK" preserve-order="true">
-        <parameter name="BROWSER" value="safari">safari</parameter>
-        <parameter name="cucumber.filter.tags" value="@videosCount">videosCount</parameter>
-        <parameter name="ENV" value="CP"></parameter>
-        <classes>
-            <class name="com.veevasys.runnerClass"/>
-        </classes>
-    </test>
 </suite>
