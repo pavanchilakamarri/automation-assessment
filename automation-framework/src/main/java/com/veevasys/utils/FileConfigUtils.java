@@ -23,7 +23,7 @@ public class FileConfigUtils {
      */
     public static Properties initialize(String filePath) {
 
-       Properties props = new Properties();
+        Properties props = new Properties();
         try {
             props.load(new FileReader(filePath));
         } catch (IOException e) {
@@ -75,20 +75,3 @@ public class FileConfigUtils {
 
 }
 
-/**
- * Sorting the property keys.
- */
-@SuppressWarnings({"unchecked", "rawtypes", "serial"})
-class SortedProperties extends Properties {
-	@Override
-    public synchronized Enumeration keys() {
-        Enumeration keysEnum = super.keys();
-        Vector<String> keyList = new Vector<>();
-        while (keysEnum.hasMoreElements()) {
-            keyList.add((String) keysEnum.nextElement());
-        }
-        Collections.sort(keyList);
-        return keyList.elements();
-    }
-
-}

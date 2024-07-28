@@ -14,6 +14,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import com.veevasys.configuration.Config;
+import com.veevasys.configuration.WebDriverConfig;
 import com.veevasys.runners.ExecutionSetup;
 import com.veevasys.utils.LogUtils;
 import org.apache.commons.io.FileUtils;
@@ -41,10 +42,11 @@ public class WebDriverUtils {
     private WebDriver driver;
     private Actions actions;
 
+    private WebDriverWait wait;
+
     public WebDriverUtils() {
         if (LocalDriverManager.getWebDriver() != null) {
             this.driver = LocalDriverManager.getWebDriver();
-
         }
 
         actions = new Actions(driver);
@@ -57,7 +59,7 @@ public class WebDriverUtils {
 
     public WebElement findElement(By locator) {
         try {
-            return new WebDriverWait(driver, 10)
+            return new WebDriverWait(driver, Config.getInstance().getWebDriverConfig().getWaitForTimeout())
                     .ignoring(StaleElementReferenceException.class)
                     .until(ExpectedConditions.presenceOfElementLocated(locator));
         } catch (Exception e) {
@@ -65,6 +67,38 @@ public class WebDriverUtils {
             return null;
         }
 
+    }
+
+    private boolean waitForElement(By locator) {
+
+        try {
+            wait = new WebDriverWait(driver, Config.getInstance().getWebDriverConfig().getWaitForTimeout());
+            wait.until(ExpectedConditions.elementToBeClickable(locator));
+            return true;
+        } catch (Exception e) {
+            e.getStackTrace();
+            return false;
+        }
+    }
+
+    public boolean isElementPresent(By locator) {
+
+        try {
+            driver.findElement(locator);
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+    public boolean isElementPresent(WebElement locator) {
+
+        try {
+            locator.isDisplayed();
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
     }
 
     public List<WebElement> findElements(By locator) {
@@ -79,14 +113,27 @@ public class WebDriverUtils {
 
     public WebDriverUtils click(By locator) {
 
+
+        /* scrollToElement(locator);*/
         findElement(locator).click();
         return this;
     }
 
+    private WebElement elementClickable(By locator) {
+        try {
+            return new WebDriverWait(driver, Config.getInstance().getWebDriverConfig().getWaitForTimeout())
+                    .until(ExpectedConditions
+                            .elementToBeClickable(locator));
+        } catch (Exception e) {
+            fail("Element is not clickable");
+        }
+        return null;
+
+    }
+
     public WebDriverUtils mouseOver(By locator) {
 
-        WebElement menu = new WebDriverWait(driver, 10).until(ExpectedConditions
-                .elementToBeClickable(locator));
+        elementClickable(locator);
         actions.moveToElement(findElement(locator)).perform();
         return this;
 
@@ -94,31 +141,17 @@ public class WebDriverUtils {
 
     public void mouseOverAndClick(By locator) {
 
-        try {
-            WebElement menu = new WebDriverWait(driver, 10).until(ExpectedConditions
-                    .elementToBeClickable(locator));
-       /* actions.moveToElement(menu)
-                .moveToElement(wait.until(ExpectedConditions.presenceOfElementLocated(
-                        By.xpath("//li[@id='menu-item-6380']//a[contains(text(),'Alle Cloudwisers')]"))))
-                .click().build().perform();*/
+        elementClickable(locator);
+        actions.moveToElement(findElement(locator)).click().perform();
 
-            actions.moveToElement(findElement(locator)).click().perform();
-        }catch (Exception e){
-            fail("Not able to hover and click " + exceptionToString(e));
-        }
     }
 
 
     public void hoverAndClickMultipleElements(By mainLocator, By subLocator) {
 
         try {
-            WebElement menu = new WebDriverWait(driver, 10).until(ExpectedConditions
+            WebElement menu = new WebDriverWait(driver, Config.getInstance().getWebDriverConfig().getWaitForTimeout()).until(ExpectedConditions
                     .presenceOfElementLocated(mainLocator));
-       /* actions.moveToElement(menu)
-                .moveToElement(wait.until(ExpectedConditions.presenceOfElementLocated(
-                        By.xpath("//li[@id='menu-item-6380']//a[contains(text(),'Alle Cloudwisers')]"))))
-                .click().build().perform();*/
-
             actions.moveToElement(findElement(mainLocator)).moveToElement(findElement(subLocator)).click().build().perform();
         } catch (Exception e) {
             fail("Element not found to over and click" + exceptionToString(e));
@@ -132,9 +165,6 @@ public class WebDriverUtils {
         return isElementPresent(locator) && findElement(locator).isDisplayed();
     }
 
-    private boolean isElementPresent(By locator) {
-        return !findElements(locator).isEmpty();
-    }
 
     public boolean validateTitle(String title) {
 
@@ -158,8 +188,11 @@ public class WebDriverUtils {
 
     public String getText(WebElement locator) {
 
-        return locator.getText();
-    }
+        if (isElementPresent(locator))
+            return locator.getText();
+        else
+            fail("Locator not found...");
+        return null;}
 
     public boolean isElementEnabled(By locator) {
 

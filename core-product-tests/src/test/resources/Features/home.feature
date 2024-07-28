@@ -1,6 +1,6 @@
 Feature: checking
 
-  @test2
+  @mensJacket @all
   Scenario: Storing Mens Jacket price, Title and Top Seller text
     Given user is in home page
     When user clicks on Mens in shop menu
@@ -9,7 +9,7 @@ Feature: checking
     Then user should store those data in file
     And attach to the report
 
-    @test
+    @videosCount @all
     Scenario: Retrieving the count of videos present in new & featured and counting the videos which are >=3
       Given user is in home page
       When user selects News & Feature from menu item

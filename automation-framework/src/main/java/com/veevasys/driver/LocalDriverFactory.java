@@ -47,13 +47,14 @@ public class LocalDriverFactory {
                         WebDriver driver = new ChromeDriver();
                         driver.manage().window().maximize();
                         LocalDriverManager.setWebDriver(driver);
-                        System.out.println("In Driver Class ... " + LocalDriverManager.getWebDriver());
+                        LogUtils.info("In Driver Class ... " + LocalDriverManager.getWebDriver());
                         return;
                     } else if (localBrowser.equalsIgnoreCase("edge")) {
                         WebDriverManager.edgedriver().setup();
                         WebDriver driver = new EdgeDriver();
                         driver.manage().window().maximize();
                         LocalDriverManager.setWebDriver(driver);
+                        LogUtils.info("In Driver Class ... " + LocalDriverManager.getWebDriver());
                         return;
                     } /*else if (localBrowser.equalsIgnoreCase("firefox")) {
                     WebDriverManager.firefoxdriver().setup();
@@ -78,13 +79,14 @@ public class LocalDriverFactory {
                     driver.manage().window().maximize();
                     LocalDriverManager.setWebDriver(driver);
                     return;
-                } */else if (localBrowser.equalsIgnoreCase("safari")) {
-                    WebDriverManager.safaridriver().setup();
-                    WebDriver driver = new SafariDriver();
-                    driver.manage().window().maximize();
-                    LocalDriverManager.setWebDriver(driver);
-                    return;
-                }  else {
+                } */ else if (localBrowser.equalsIgnoreCase("safari")) {
+                        WebDriverManager.safaridriver().setup();
+                        WebDriver driver = new SafariDriver();
+                        driver.manage().window().maximize();
+                        LocalDriverManager.setWebDriver(driver);
+                        LogUtils.info("In Driver Class ... " + LocalDriverManager.getWebDriver());
+                        return;
+                    } else {
                         throw new RuntimeException("execution type is invalid. valid: local");
                     }
                 }

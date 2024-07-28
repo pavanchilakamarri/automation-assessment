@@ -1,0 +1,40 @@
+2024-07-27 09:14:49 INFO  LogUtils:18 - SET UP for project is success
+2024-07-27 09:14:50 INFO  LogUtils:18 - Running Scenario Name: Storing footer links and reporting duplicate links
+2024-07-27 10:11:33 INFO  LogUtils:18 - SET UP for project is success
+2024-07-27 10:11:34 INFO  LogUtils:18 - Running Scenario Name: Storing footer links and reporting duplicate links
+2024-07-27 10:12:09 INFO  LogUtils:18 - SET UP for project is success
+2024-07-27 10:12:09 INFO  LogUtils:18 - Running Scenario Name: Storing footer links and reporting duplicate links
+2024-07-27 10:15:58 INFO  LogUtils:18 - SET UP for project is success
+2024-07-27 10:15:59 INFO  LogUtils:18 - Running Scenario Name: Storing footer links and reporting duplicate links
+2024-07-27 11:11:00 INFO  LogUtils:18 - SET UP for project is success
+2024-07-27 11:11:01 INFO  LogUtils:18 - Running Scenario Name: Storing footer links and reporting duplicate links
+2024-07-27 11:11:10 INFO  LogUtils:18 - FILE PATH IS :: src/test/resources/footerLinks.csv
+2024-07-27 11:12:29 INFO  LogUtils:18 - SET UP for project is success
+2024-07-27 11:12:30 INFO  LogUtils:18 - Running Scenario Name: Storing footer links and reporting duplicate links
+2024-07-27 11:12:38 INFO  LogUtils:18 - FILE PATH IS :: ../test.properties
+2024-07-27 11:12:57 INFO  LogUtils:18 - SET UP for project is success
+2024-07-27 11:12:57 INFO  LogUtils:18 - Running Scenario Name: Storing footer links and reporting duplicate links
+2024-07-27 11:13:04 INFO  LogUtils:18 - FILE PATH IS :: src/test/resources/test.properties
+2024-07-27 11:13:17 INFO  LogUtils:18 - SET UP for project is success
+2024-07-27 11:13:18 INFO  LogUtils:18 - Running Scenario Name: Storing footer links and reporting duplicate links
+2024-07-27 11:13:23 INFO  LogUtils:18 - FILE PATH IS :: test.properties
+2024-07-27 18:20:24 INFO  LogUtils:18 - BROWSER SET in Execution file is :: chrome
+2024-07-27 18:20:24 INFO  LogUtils:18 - SET UP for project is success
+2024-07-27 18:20:25 INFO  LogUtils:18 - Running Scenario Name: Storing footer links and reporting duplicate links
+2024-07-27 18:20:27 INFO  LogUtils:18 - DRIVER initialised...
+2024-07-27 18:20:35 INFO  LogUtils:18 - FILE PATH IS :: src/test/resources/test.properties
+2024-07-27 18:22:36 INFO  LogUtils:18 - BROWSER SET in Execution file is :: chrome
+2024-07-27 18:22:36 INFO  LogUtils:18 - SET UP for project is success
+2024-07-27 18:22:36 INFO  LogUtils:18 - Running Scenario Name: Storing footer links and reporting duplicate links
+2024-07-27 18:22:39 INFO  LogUtils:18 - DRIVER initialised...
+2024-07-27 18:22:45 INFO  LogUtils:18 - FILE PATH IS :: src/test/resources/test.properties
+2024-07-27 19:55:30 INFO  LogUtils:18 - BROWSER SET in Execution file is :: chrome
+2024-07-27 19:55:30 INFO  LogUtils:18 - SET UP for project is success
+2024-07-27 19:55:31 INFO  LogUtils:18 - Running Scenario Name: Storing footer links and reporting duplicate links
+2024-07-27 19:55:33 INFO  LogUtils:18 - DRIVER initialised...
+2024-07-27 19:55:40 INFO  LogUtils:18 - FILE PATH IS :: src/test/resources/test.properties
+2024-07-27 19:56:40 INFO  LogUtils:18 - BROWSER SET in Execution file is :: chrome
+2024-07-27 19:56:40 INFO  LogUtils:18 - SET UP for project is success
+2024-07-27 19:56:40 INFO  LogUtils:18 - Running Scenario Name: Storing footer links and reporting duplicate links
+2024-07-27 19:56:43 INFO  LogUtils:18 - DRIVER initialised...
+2024-07-27 19:56:45 INFO  LogUtils:18 - FILE PATH IS :: src/test/resources/test.properties

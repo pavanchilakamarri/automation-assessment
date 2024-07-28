@@ -9,7 +9,6 @@ public class WebDriverConfig {
     private int implicitTimeout = 0;
     private int waitForTimeout = 10;
     private int pageLoadTimeout = 0;
-    private int scriptTimeout = 0;
     private boolean screenshots = true;
 
 
@@ -63,14 +62,6 @@ public class WebDriverConfig {
 
     public void setPageLoadTimeout(int pageLoadTimeout) {
         this.pageLoadTimeout = pageLoadTimeout;
-    }
-
-    public int getScriptTimeout() {
-        return scriptTimeout;
-    }
-
-    public void setScriptTimeout(int scriptTimeout) {
-        this.scriptTimeout = scriptTimeout;
     }
 
     public boolean isScreenshots() {

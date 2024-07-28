@@ -28,6 +28,8 @@ public class MensPage {
 
     private String findTitle = "(//div[@class='product-card-title'])[";
 
+    private By alertPopUp = By.xpath("//i[@aria-label='Close Pop-Up'][@role='button']");
+
     private By nextPage = By.xpath("//div[@class='grid-paginator']//a[@aria-label='next page'][@aria-disabled='false']");
 
     ////div[@data-trk-id='product-grid']/div/div[2]/div/following::span[@class='sr-only'][2]
@@ -47,16 +49,20 @@ public class MensPage {
     }
 
     public void clickJacketFilter() {
+
+
+        if (driver.isElementPresent(alertPopUp))
+            driver.click(alertPopUp);
         driver.click(jacketRadioButton);
     }
 
     public void retrieveProductDetails() throws IOException {
 
 
-        String txtPath = FileConfigUtils.readConfigFile("txtPath","src/test/resources/test.properties");
+        String txtPath = FileConfigUtils.readConfigFile("txtPath", "src/test/resources/test.properties");
         TextFileUtils textFileUtils = new TextFileUtils(txtPath);
         boolean pagenation = true;
-       while (pagenation) {
+        while (pagenation) {
             List<WebElement> listOfCards = driver.findElements(gridList);
             int i = 1;
             System.out.println("SIZE of grid is :: " + listOfCards.size());
@@ -70,12 +76,12 @@ public class MensPage {
             }
 
 
-        if (driver.isElementDisplayed(nextPage))
-            driver.click(nextPage);
-        else
-            pagenation = false;
+            if (driver.isElementDisplayed(nextPage))
+                driver.click(nextPage);
+            else
+                pagenation = false;
         }
-            textFileUtils.closeFile();
+        textFileUtils.closeFile();
     }
 
 }

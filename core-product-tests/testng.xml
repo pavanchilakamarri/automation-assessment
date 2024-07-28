@@ -3,21 +3,15 @@
 <suite name="Test Suite" verbose="1" parallel="tests" thread-count="3" configfailurepolicy="continue">
     <test name="Navigate and Verify Mens Jackets using chrome" annotations="JDK" preserve-order="true">
        <parameter name="BROWSER" value="chrome">chrome</parameter>
-        <parameter name="cucumber.filter.tags" value="@test">test</parameter>
+        <parameter name="cucumber.filter.tags" value="@all">all</parameter>
         <classes>
             <class name="com.veevasys.runnerClass"/>
         </classes>
     </test>
     <test name="Navigate and Verify Mens Jackets using edge" annotations="JDK" preserve-order="true">
         <parameter name="BROWSER" value="edge">edge</parameter>
-        <parameter name="cucumber.filter.tags" value="@test">test</parameter>
-        <classes>
-            <class name="com.veevasys.runnerClass"/>
-        </classes>
-    </test>
-    <test name="Navigate and Verify Mens Jackets using safari" annotations="JDK" preserve-order="true">
-        <parameter name="BROWSER" value="safari">safari</parameter>
-        <parameter name="cucumber.filter.tags" value="@test">test</parameter>
+        <parameter name="cucumber.filter.tags" value="@mensJacket">mensJacket</parameter>
+        <parameter name="ENV" value="CP"></parameter>
         <classes>
             <class name="com.veevasys.runnerClass"/>
         </classes>

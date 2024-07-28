@@ -10,6 +10,5 @@ webDriverConfig:
   implicitTimeout: 30 #default 30 seconds
   waitForTimeout: 30 #default 30 seconds
   pageLoadTimeout: 30 #default 30 seconds
-  scriptTimeout: 30 #default 30 seconds
   chromeSwitches: "--start-maximized,--disable-popup-blocking,--incognito,--disable-infobars,--ignore-certificate-errors" #no default value
   firefoxPreferences: "-Dfirefox.preferences=browser.download.folderList=2;browser.download.manager.showWhenStarting=false;browser.download.dir=c:\\downloads" #no default value
