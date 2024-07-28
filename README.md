@@ -47,7 +47,7 @@ automation-assessment> <B>mvn clean test -pl</B> <module_name><br>
 
 <B><I>REMOTE is not included. Current code is feasible to include the Remote if necessary in future</B></I>
 
-### **Note:** Browser and Environment are parameterized in testng.xml
+### **Note:** Browser, Cucumber Tags and Environment are parameterized in testng.xml
 
 **Default browser will be chrome** 
 
