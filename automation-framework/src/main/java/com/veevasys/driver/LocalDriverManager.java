@@ -14,10 +14,6 @@ public class LocalDriverManager {
 		driverConfig = Config.getInstance().getWebDriverConfig();
 	}
 
-	private static int pageLoadTimeout = driverConfig.getPageLoadTimeout();
-	private static	int scriptTimeout = driverConfig.getScriptTimeout();
-	private static	int implicitTimeout = driverConfig.getImplicitTimeout();
-
 	public static WebDriver getWebDriver() {
 		return webDriver.get();
 	}

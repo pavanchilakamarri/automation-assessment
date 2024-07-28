@@ -19,6 +19,9 @@ Environment:
 * 	Currently Environment is pointing to CP, DP1 & DP2 but in future this can be pointed to real environments with minor tweaks
 
 ## Browser
+
+#### **_Browsers binaries are used for setting up browsers through WebDriverManager dependency._**
+
 CHROME, EDGE and SAFARI browsers related code is implemented and validated.
 FIREFOX, IE code is implemented but not validated due to some unavoidable circumstances.
 
@@ -39,7 +42,7 @@ automation-assessment> <B>mvn clean test</B> \\This command will run all the tes
 <br><B>To Run specific module test cases from parent module:</B><br>
 automation-assessment> <B>mvn clean test -pl</B> <module_name><br>
 <br><B>To Run specific module test cases from its own module:</B><br>
-1. Module_name/<B>mvn clean test</B>
+1. Module_name % <B>mvn clean test</B>
 <br>2. Go to testng.xml --> run
 
 <B><I>REMOTE is not included. Current code is feasible to include the Remote if necessary in future</B></I>
@@ -62,18 +65,18 @@ mvn archetype:generate -DgroupId=**com.veevasys** -DartifactId=**Provide_Module_
 
 Once Module is created, add below code to pom.xml
 
-**In Parent pom.xml(i.e., automation-assessment) add new module details under <module> section**
+**In Parent pom.xml(i.e., automation-assessment) add new module details under` <module>` section**
 ex:
-<modules>
+<br>`<modules>
   <module>module_name</module>
-</modules>
+</modules>`
 
-**In new module pom.xml, add below parent dependency**
-<parent>
+**In new module pom.xml, add below parent dependency**<br>
+`<parent>
 <artifactId>automation-assessment</artifactId>
 <groupId>com.veevasys</groupId>
 <version>1.0-SNAPSHOT</version>
-</parent>
+</parent>`
 
 
 
@@ -87,7 +90,9 @@ ex:
 Screenshot:
 ---------------
 *	Most of the time we think to Capture Screenshot in WebDriver when some kind of error or exception surfaces while practicing testing, to resolve the same the framework has a method.
-*	getScreenshot() is used to indicates driver to capture a screenshot and store it in //screenshot/packageName directory.
+*	captureScreenshot() is used to indicates driver to capture a screenshot and store it in //ExportData directory.
+*   Screenshot can be disabled through the framework property file. Go to test-properties.yaml --> change screenshots to false under webDriverConfig.
+*   Default value will be true for this variable.
 
 Reporting:
 ---------------
@@ -101,3 +106,5 @@ Reporting:
 * Including the retry functionality using testng listeners
 * Firefox and IE and other browsers need to include.
 * Improving quality of the exceptions
+* Database integration(Oracle & MongoDB)
+* CI/CD integration

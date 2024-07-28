@@ -20,43 +20,14 @@ public class EnvironmentConfig {
     }
 
     private String url;
-    private String username;
-    private String password;
-    private String database;
 
     public String getUrl() {
         return url;
     }
 
-    public String getUsername() {
-        return username;
-    }
-
-
-    public String getPassword() {
-        return password;
-    }
-
     public void setUrl(String url) {
         this.url = url;
     }
-
-    public void setUsername(String username) {
-        this.username = username;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public void setDatabase(String database) {
-        this.database = database;
-    }
-
-    public String getDatabase() {
-        return database;
-    }
-
 
     public static synchronized EnvironmentConfig getInstance() {
         if (instance == null) {

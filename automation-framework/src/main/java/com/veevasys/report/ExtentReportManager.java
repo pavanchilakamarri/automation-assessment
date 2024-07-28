@@ -41,9 +41,9 @@ public class ExtentReportManager {
         ExtentSparkReporter spark = new ExtentSparkReporter(link);
         extentReports.attachReporter(spark);
         spark.config().setTheme(Theme.STANDARD);
-       /* spark.config().setDocumentTitle(FrameworkConstants.REPORT_TITLE);
-        spark.config().setReportName(FrameworkConstants.REPORT_TITLE);
-        extentReports.setSystemInfo("Framework Name", FrameworkConstants.REPORT_TITLE);
+        spark.config().setReportName(Config.getInstance().getTestConfig().getProjectName());
+        //   extentReports.setSystemInfo("Author", FrameworkConstants.AUTHOR);
+      /*    extentReports.setSystemInfo("Framework Name", FrameworkConstants.REPORT_TITLE);
         extentReports.setSystemInfo("Author", FrameworkConstants.AUTHOR);
 */
         System.out.println("Extent Reports is installed.");
@@ -56,7 +56,7 @@ public class ExtentReportManager {
             extentReports.flush();
         }
         ExtentTestManager.unload();
-    //    ReportUtils.openReports(link);
+        //    ReportUtils.openReports(link);
     }
 
     public static void createTest(String testCaseName) {

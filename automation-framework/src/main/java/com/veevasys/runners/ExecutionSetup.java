@@ -24,9 +24,7 @@ public class ExecutionSetup {
 
             config = Config.getInstance();
 
-            //assertNotNull(testConfig, "testConfig not defined in properties");
-            //isScreenshot = config.getWebDriverConfig().isScreenshots();
-            retryCount = config.getTestConfig().getRetryCount();
+            //retryCount = config.getTestConfig().getRetryCount();
             execution = config.getTestConfig().getExecution();
             config.getTestConfig().setEnvironment(env);
 

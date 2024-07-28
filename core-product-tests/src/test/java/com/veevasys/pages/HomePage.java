@@ -1,6 +1,9 @@
 package com.veevasys.pages;
 
+import com.veevasys.driver.LocalDriverManager;
 import com.veevasys.driver.WebDriverUtils;
+import com.veevasys.utils.CaptureHelpers;
+import com.veevasys.utils.FileConfigUtils;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -34,6 +37,9 @@ public class HomePage {
     }
 
     public void clickAlertClose() {
+
+        CaptureHelpers.captureScreenshot(LocalDriverManager.getWebDriver(), "AlertBox",
+                FileConfigUtils.readConfigFile("EXPORT_CAPTURE_PATH", "src/test/resources/test.properties"));
         driver.click(alertClose);
     }
 
