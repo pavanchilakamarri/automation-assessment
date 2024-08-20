@@ -2,7 +2,7 @@ Introduction:
 ---------------
 
 
-This Test Automation Framework is created using Java + Selenium Web Driver + TestNG + Cucumber. Which can be used across different web based applications. In this approach, the endeavor is to build a lot of applications independent reusable components so that they can directly used for another web application/modules without spending any extra effort. With this framework in place, whenever we need to automate a web based application/module, we would not need to start from scratch, but use the application independent components to the extent possible and create application specific components for the specific needs. 
+This Test Automation Framework is created using Java + Selenium Web Driver + TestNG + Cucumber. Which can be used across different web based applications. In this approach, the endeavor is to build a lot of applications independent reusable components so that they can directly used for another web application/modules without spending any extra effort. With this framework in place, whenever we need to automate a web-based application/module, we would not need to start from scratch, but use the application independent components to the extent possible and create application specific components for specific needs. 
 
 Prerequisites:
 ---------------
@@ -16,14 +16,13 @@ Prerequisites:
 
 Environment:
 ---------------
-* 	Currently Environment is pointing to CP, DP1 & DP2 but in future this can be pointed to real environments with minor tweaks
 
 ## Browser
 
-#### **_Browsers binaries are used for setting up browsers through WebDriverManager dependency._**
+#### **_Browser binaries are used for setting up browsers through WebDriverManager dependency._**
 
 CHROME, EDGE and SAFARI browsers related code is implemented and validated.
-FIREFOX, IE code is implemented but not validated due to some unavoidable circumstances.
+FIREFOX, IE code is implemented but not validated.
 
 ### **NOTE**: 
 To run the test cases in SAFARI, do enable **Allow Remote Automation** in SAFARI as shown in below.
@@ -34,8 +33,8 @@ Goto Safari browser --> Develop --> click Allow Remote Automation if it is not a
 Execution:
 ---------------
 *	Clone the repository.
-*	Open command prompt and go to automation-assessment folder.
-*	To run on local environment use below commands ....
+*	Open the command prompt and go to the automation-assessment folder.
+*	To run on the local environment use the below commands ....
 
 <B>To Run all the test cases from all the modules:</B><br>
 automation-assessment> <B>mvn clean test</B> \\This command will run all the test cases from all the modules<br>
@@ -74,7 +73,7 @@ ex:
 **In new module pom.xml, add below parent dependency**<br>
 `<parent>
 <artifactId>automation-assessment</artifactId>
-<groupId>com.veevasys</groupId>
+<groupId>groupID</groupId>
 <version>1.0-SNAPSHOT</version>
 </parent>`
 
